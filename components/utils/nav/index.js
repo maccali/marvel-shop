@@ -85,21 +85,21 @@ function Nav() {
             </li>
           </ul>
           <ul className={styles.menu}>
-            <Btn href="/cart" noStyle>
+            <Button href="/cart" noStyle>
               <FiShoppingCart />
-            </Btn>
-            <Btn action={() => setMenuActive(!menuActive)} noStyle>
+            </Button>
+            <Button action={() => setMenuActive(!menuActive)} noStyle>
               <FiMenu />
-            </Btn>
+            </Button>
           </ul>
         </nav>
         <div className={(menuActive) ? `${styles.contaside} ${styles.contasideativado}` : styles.contaside}>
           <div className={styles.contasidefix}>
             <div className={styles.headercont}>
               <p>Menu</p>
-              <Btn title="Access Cart" action={() => setMenuActive(!menuActive)} noStyle>
+              <Button title="Access Cart" action={() => setMenuActive(!menuActive)} noStyle>
                 <MdClose />
-              </Btn>
+              </Button>
             </div>
             <div className={styles.cardmenu}>
               <div>
@@ -109,14 +109,14 @@ function Nav() {
             </div>
             <div className={styles.menulist}>
               {Object.keys(links).map((key) => (
-                <Btn href={`${links[key].url}`} noStyle>
+                <Button href={`${links[key].url}`} noStyle>
                   <div className={styles.menuitem} aria-label="Calendar Button">
                     <span>
                       {links[key].icone}
                     </span>
                     <p>{links[key].nome}</p>
                   </div>
-                </Btn>
+                </Button>
               ))}
 
               {installBtn ?

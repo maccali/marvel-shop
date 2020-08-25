@@ -7,6 +7,7 @@ import styles from './productcontent.module.css'
 import Button from '../../utils/button'
 
 import CartHelper from '../../../helpers/CartHelper'
+import MarvelHelper from '../../../helpers/MarvelHelper'
 
 type Capsule = {
   product: ComicFace
@@ -33,7 +34,7 @@ function ProductContent({
               <div className="row">
                 <div className="col-12 col-md-6">
                   <div className={styles.img}>
-                    <img src={`${product.thumbnail.path}.${product.thumbnail.extension}`} alt={`Image for ${product.title}`} />
+                    <img src={MarvelHelper.httpsTransform(`${product.thumbnail.path}.${product.thumbnail.extension}`)} alt={`Image for ${product.title}`} />
                   </div>
                 </div>
                 <div className="col-12 col-md-6">

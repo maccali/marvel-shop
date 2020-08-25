@@ -10,6 +10,9 @@ const MarvelHelper = {
     const stringForCripto = `${ts}${privateKey}${publicKey}`
 
     return MD5(stringForCripto).toString()
+  },
+  httpsTransform: (url: string) => {
+    return url.replace(/^http:\/\//i, 'https://');
   }
 }
 

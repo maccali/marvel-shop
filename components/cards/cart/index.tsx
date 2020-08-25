@@ -5,6 +5,7 @@ import { FiMinus, FiPlus, FiTrash2 } from 'react-icons/fi'
 import styles from './cartcard.module.css'
 import Button from '../../utils/button'
 
+import MarvelHelper from '../../../helpers/MarvelHelper'
 
 type CartCardFace = {
   title: string;
@@ -33,7 +34,7 @@ function CartCard({
     <>
       <div className={styles.card}>
         <div className={styles.img}>
-          <img src={imgUrl} alt={title} />
+          <img src={MarvelHelper.httpsTransform(imgUrl)} alt={title} />
         </div>
         <div className={styles.title}>
           <p>{title}</p>

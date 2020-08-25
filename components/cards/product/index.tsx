@@ -1,5 +1,6 @@
 import styles from './productcard.module.css'
 
+import MarvelHelper from '../../../helpers/MarvelHelper'
 
 type ProductCardFace = {
   title: string;
@@ -21,7 +22,7 @@ function ProductCard({
           <p>{title}</p>
         </div>
         <div className={styles.img}>
-          <img src={imgUrl} alt={title} />
+          <img src={MarvelHelper.httpsTransform(imgUrl)} alt={title} />
         </div>
         <div className={styles.price}>
           {price == 0 ?

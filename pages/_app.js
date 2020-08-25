@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState, useEffect } from 'react'
+import React, { useLayoutEffect, useState } from 'react'
 
 // External Libs
 import '../public/libs/bootstrap/bootstrap.min.css'
@@ -10,7 +10,7 @@ import '../public/custom/css/template.css'
 import 'react-datepicker/dist/react-datepicker.css';
 import 'react-lazy-load-image-component/src/effects/opacity.css';
 
-import Nav from '../components/utils/Nav'
+import Nav from '../components/utils/nav'
 import Auth from '../helpers/Auth.ts'
 import AuthError from '../components/content/AuthError'
 import Meta from '../components/utils/meta'

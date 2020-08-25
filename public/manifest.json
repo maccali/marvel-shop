@@ -1,11 +1,11 @@
 {
-    "name": "Apod",
-    "short_name": "Apod",
-    "description": "Amazing Images from Nasa day by day",
+    "name": "marvel-shop",
+    "short_name": "marvel-shop",
+    "description": "",
     "display": "standalone",
     "orientation": "portrait",
-    "theme_color": "#2c2c7b",
-    "background_color": "#2c2c7b",
+    "theme_color": "#fff",
+    "background_color": "#fff",
     "start_url": "/",
     "icons": [
       {

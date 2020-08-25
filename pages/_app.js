@@ -13,6 +13,7 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 import Nav from '../components/utils/Nav'
 import Auth from '../helpers/Auth.ts'
 import AuthError from '../components/content/AuthError'
+import Meta from '../components/utils/meta'
 
 
 // This default export is required in a new `pages/_app.js` file.
@@ -30,7 +31,7 @@ export default function MyApp({ Component, pageProps }) {
   ];
 
   const prohibitNavigationBars = [
-   
+
   ];
 
 
@@ -61,7 +62,10 @@ export default function MyApp({ Component, pageProps }) {
       allowLoad ?
         <>
           {allowNav ? <Nav /> : ''}
-          < Component {...pageProps} />
+          <>
+            <Meta />
+            < Component {...pageProps} />
+          </>
         </> :
         <AuthError />
       : ''}

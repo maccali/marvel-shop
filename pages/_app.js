@@ -12,7 +12,7 @@ import 'react-lazy-load-image-component/src/effects/opacity.css';
 
 import Nav from '../components/utils/nav'
 import Auth from '../helpers/Auth.ts'
-import AuthError from '../components/content/AuthError'
+import AuthError from '../components/content/autherror'
 import Meta from '../components/utils/meta'
 
 
